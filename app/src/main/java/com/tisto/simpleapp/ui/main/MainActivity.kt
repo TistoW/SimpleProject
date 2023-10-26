@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.inyongtisto.myhelper.extension.getSalam
+import com.inyongtisto.myhelper.extension.intentActivity
 import com.inyongtisto.myhelper.extension.popUpMenu
 import com.inyongtisto.myhelper.extension.pushActivity
 import com.inyongtisto.myhelper.extension.remove
@@ -15,6 +16,7 @@ import com.tisto.simpleapp.ui.main.adapter.UserAdapter
 import com.tisto.simpleapp.util.Prefs
 import com.tisto.simpleapp.util.getSingleInitial
 import com.tisto.simpleapp.util.randomColor
+import com.tisto.simpleapp.util.writeLog
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
@@ -42,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 popUpMenu(it, listOf("Log Database", "Logout")) { menu ->
                     when (menu) {
                         "Logout" -> logout()
-                        "Log Database" -> {}
+                        "Log Database" -> intentActivity(LogActivity::class.java)
                     }
                 }
             }
@@ -70,6 +72,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun observer() {
         viewModel.get().observe(this) {
+            writeLog("get-all-user")
             adapter.submitList(it)
         }
     }

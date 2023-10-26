@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
     private fun login() {
         binding.apply {
             viewModel.getByEmail(edtEmail.getString()).observe(this@LoginActivity) {
-                writeLog("select user by email ${edtEmail.getString()}")
+                writeLog("select-user-by-email ${binding.edtEmail.getString()}")
                 if (it != null) {
                     if (verifyPassword(edtPassword.text.toString(), it.password.def())) {
                         toastSuccess("Selamat datang ${it.name}")

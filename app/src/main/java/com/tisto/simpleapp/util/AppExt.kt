@@ -34,10 +34,9 @@ fun verifyPassword(password: String, bcryptHashString: String): Boolean {
 fun writeLog(message: String) {
     val logPath = Prefs.pathLog
     val fileLog = File(logPath)
-    if (!fileLog.exists()) {
-        fileLog.parentFile?.mkdirs()
-        val writer1 = BufferedWriter(FileWriter(fileLog))
-        writer1.write("${currentTime()}-$message")
+    if (fileLog.exists()) {
+        val writer1 = BufferedWriter(FileWriter(fileLog, true))
+        writer1.write("${currentTime()}:$message\n")
         writer1.close()
     }
 }

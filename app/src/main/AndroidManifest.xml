@@ -25,6 +25,7 @@
         <activity android:name="com.tisto.simpleapp.ui.auth.LoginActivity" />
         <activity android:name="com.tisto.simpleapp.ui.auth.RegisterActivity" />
         <activity android:name="com.tisto.simpleapp.ui.main.MainActivity" />
+        <activity android:name="com.tisto.simpleapp.ui.main.LogActivity" />
     </application>
 
 </manifest>

@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun checkEmail() {
         viewModel.getByEmail(binding.edtEmail.getString()).observe(this) {
-            writeLog("select user by email ${binding.edtEmail.getString()}")
+            writeLog("select-user-by-email ${binding.edtEmail.getString()}")
             if (it == null) {
                 register()
             } else {
@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
                 age = age.toIntSafety(),
                 password = password.encryptPassword(),
             )
-            writeLog("create user name:$name, email:$email, age:$age, password:$password")
+            writeLog("create-user-name:$name,email:$email,age:$age,password:$password")
             viewModel.create(body)
             toastSuccess(getString(R.string.register_berhasil_silahkan_login))
             pushActivity(LoginActivity::class.java)
