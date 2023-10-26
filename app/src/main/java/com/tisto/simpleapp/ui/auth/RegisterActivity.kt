@@ -13,6 +13,7 @@ import com.tisto.simpleapp.core.source.local.entity.UserEntity
 import com.tisto.simpleapp.databinding.ActivityRegisterBinding
 import com.tisto.simpleapp.util.encryptPassword
 import com.tisto.simpleapp.util.isEmailValid
+import com.tisto.simpleapp.util.writeLog
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class RegisterActivity : AppCompatActivity() {
@@ -42,9 +43,10 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkEmail(){
-        viewModel.getByEmail(binding.edtEmail.getString()).observe(this){
-            if (it == null){
+    private fun checkEmail() {
+        viewModel.getByEmail(binding.edtEmail.getString()).observe(this) {
+            writeLog("select user by email ${binding.edtEmail.getString()}")
+            if (it == null) {
                 register()
             } else {
                 binding.edtEmail.error = getString(R.string.email_telah_terdaftar)
@@ -54,12 +56,17 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun register() {
         if (isValid()) {
+            val name = binding.edtName.getString()
+            val email = binding.edtEmail.getString()
+            val age = binding.edtAge.getString()
+            val password = binding.edtPassword.getString()
             val body = UserEntity(
-                name = binding.edtName.getString(),
-                email = binding.edtEmail.getString(),
-                age = binding.edtAge.getString().toIntSafety(),
-                password = binding.edtPassword.getString().encryptPassword(),
+                name = name,
+                email = email,
+                age = age.toIntSafety(),
+                password = password.encryptPassword(),
             )
+            writeLog("create user name:$name, email:$email, age:$age, password:$password")
             viewModel.create(body)
             toastSuccess(getString(R.string.register_berhasil_silahkan_login))
             pushActivity(LoginActivity::class.java)

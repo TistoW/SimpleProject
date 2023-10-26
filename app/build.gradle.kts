@@ -74,4 +74,7 @@ dependencies {
 
     // encrypt password
     implementation("at.favre.lib:bcrypt:0.9.0")
+
+    // shared preferences
+    implementation("com.chibatching.kotpref:kotpref:2.13.1")
 }

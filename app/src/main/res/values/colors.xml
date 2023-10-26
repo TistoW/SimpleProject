@@ -49,4 +49,16 @@
     <color name="blue_donker_700">#34407d</color>
     <color name="blue_donker_800">#2d3770</color>
     <color name="blue_donker_900">#222759</color>
+
+
+    <color name="color1">#FFC107</color>
+    <color name="color2">#00B608</color>
+    <color name="color3">#FF387C</color>
+    <color name="color4">#F57C00</color>
+    <color name="color5">#1976D2</color>
+    <color name="color6">#f64342</color>
+    <color name="color7">#00a112</color>
+    <color name="color8">#BC1FFF</color>
+    <color name="color9">#008f00</color>
+    <color name="color10">#E91E63</color>
 </resources>
