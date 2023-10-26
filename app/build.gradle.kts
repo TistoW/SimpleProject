@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.tisto.simpleapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.tisto.simpleapp"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -44,4 +44,11 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // koin
+    implementation("io.insert-koin:koin-core:3.2.0-beta-1")
+    implementation("io.insert-koin:koin-android:3.2.0-beta-1")
+
+    // myHelper
+    implementation("com.github.TistoW:MyHelper:2.0.41")
 }

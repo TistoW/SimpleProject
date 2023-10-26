@@ -2,4 +2,51 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/colorPrimary_700</color>
+    <color name="colorPrimaryDark">@color/colorPrimary_800</color>
+    <color name="colorPrimaryVariant">#F9591D</color>
+    <color name="colorAccent">@color/colorPrimary_700</color>
+    <color name="colorText">#121931</color>
+    <color name="colorText2">#DB3975</color>
+
+    <color name="colorSecondary">@color/colorSecondary_700</color>
+    <color name="colorSecondaryDark">@color/colorSecondary_800</color>
+
+
+    <color name="colorPrimary_10">@color/blue_donker_10</color>
+    <color name="colorPrimary_50">@color/blue_donker_50</color>
+    <color name="colorPrimary_100">@color/blue_donker_100</color>
+    <color name="colorPrimary_200">@color/blue_donker_200</color>
+    <color name="colorPrimary_300">@color/blue_donker_300</color>
+    <color name="colorPrimary_400">@color/blue_donker_400</color>
+    <color name="colorPrimary_500">@color/blue_donker_500</color>
+    <color name="colorPrimary_600">@color/blue_donker_600</color>
+    <color name="colorPrimary_700">@color/blue_donker_700</color>
+    <color name="colorPrimary_800">@color/blue_donker_800</color>
+    <color name="colorPrimary_900">@color/blue_donker_900</color>
+
+    <color name="colorSecondary_10">@color/orange_10</color>
+    <color name="colorSecondary_50">@color/orange_50</color>
+    <color name="colorSecondary_100">@color/orange_100</color>
+    <color name="colorSecondary_200">@color/orange_200</color>
+    <color name="colorSecondary_300">@color/orange_300</color>
+    <color name="colorSecondary_400">@color/orange_400</color>
+    <color name="colorSecondary_500">@color/orange_500</color>
+    <color name="colorSecondary_600">@color/orange_600</color>
+    <color name="colorSecondary_700">@color/orange_700</color>
+    <color name="colorSecondary_800">@color/orange_800</color>
+    <color name="colorSecondary_900">@color/orange_900</color>
+
+    <color name="blue_donker_10">#F6F9FD</color>
+    <color name="blue_donker_50">#e7eaf1</color>
+    <color name="blue_donker_100">#c4c9de</color>
+    <color name="blue_donker_200">#9ea7c7</color>
+    <color name="blue_donker_300">#7985b0</color>
+    <color name="blue_donker_400">#5d6aa0</color>
+    <color name="blue_donker_500">#435191</color>
+    <color name="blue_donker_600">#3c4a89</color>
+    <color name="blue_donker_700">#34407d</color>
+    <color name="blue_donker_800">#2d3770</color>
+    <color name="blue_donker_900">#222759</color>
 </resources>

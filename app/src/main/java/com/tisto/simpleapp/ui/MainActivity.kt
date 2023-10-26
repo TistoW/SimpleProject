@@ -1,7 +1,8 @@
-package com.tisto.simpleapp
+package com.tisto.simpleapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tisto.simpleapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
