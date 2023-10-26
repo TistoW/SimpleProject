@@ -18,4 +18,13 @@
     <string name="informasi_user">Informasi User</string>
     <string name="nama">Nama</string>
     <string name="umur">Umur</string>
+    <string name="umur_tidak_boleh_kurang_dari_18_tahun">Umur tidak boleh kurang dari 18 tahun</string>
+    <string name="email_tidak_valid">Email tidak valid</string>
+    <string name="password_minimal_6_karakter">Password minimal 6 karakter</string>
+    <string name="password_minimal_terdapat_1_huruf_kapital">Password minimal terdapat 1 huruf kapital.</string>
+    <string name="password_harus_gabungan_huruf_dan_angka">Password harus gabungan huruf dan angka.</string>
+    <string name="email_tidak_terdaftar">Email tidak terdaftar</string>
+    <string name="password_salah">Password salah</string>
+    <string name="register_berhasil_silahkan_login">Register berhasil, Silahkan login.</string>
+    <string name="email_telah_terdaftar">Email telah terdaftar</string>
 </resources>

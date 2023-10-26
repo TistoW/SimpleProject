@@ -79,8 +79,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/password"
-                    android:maxLines="1"
                     android:inputType="textPassword"
+                    android:maxLines="1"
                     android:paddingVertical="0dp"
                     android:singleLine="true"
                     android:textAppearance="@style/textAppearance.Body2" />
@@ -95,10 +95,10 @@
                 android:layout_marginTop="@dimen/marginLarge"
                 android:gravity="center"
                 android:text="@string/masuk"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <LinearLayout
-                android:id="@+id/btn_signup"
+                android:id="@+id/btn_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/marginSmall"
@@ -113,7 +113,6 @@
                     android:textColor="@color/gray2" />
 
                 <TextView
-                    android:id="@+id/btn_daftar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"

@@ -25,8 +25,8 @@
                 android:layout_gravity="start"
                 android:layout_marginTop="@dimen/marginSmall"
                 android:text="@string/lengkapi_data_untuk_melanjutkan"
-                android:textColor="@color/gray3"
-                android:textAppearance="@style/textAppearance.Body2" />
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/gray3" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +41,29 @@
                     android:textAppearance="@style/textAppearance.Body2.Bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/marginNormal"
+                    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/normal_height"
+                        android:background="@color/white"
+                        android:hint="@string/nama"
+                        android:inputType="textPersonName"
+                        android:padding="0dp"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        tools:ignore="RtlSymmetry" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <include layout="@layout/border" />
+
+                <com.google.android.material.textfield.TextInputLayout
                     style="@style/TextInputLayout.clear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -71,12 +93,13 @@
                     android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edt_phone"
+                        android:id="@+id/edt_age"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/normal_height"
                         android:background="@color/white"
                         android:hint="@string/umur"
                         android:inputType="number"
+                        android:maxLength="2"
                         android:padding="0dp"
                         android:paddingStart="@dimen/paddingNormal"
                         android:textAppearance="@style/textAppearance.Body2"
@@ -109,7 +132,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_signup"
+                    android:id="@+id/btn_register"
                     style="@style/Button.Normal"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/normal_height"

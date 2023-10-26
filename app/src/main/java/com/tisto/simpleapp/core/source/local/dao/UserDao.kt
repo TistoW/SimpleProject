@@ -26,6 +26,15 @@ interface UserDao {
     @Query("SELECT * from UserEntity ORDER BY id ASC")
     fun getAll(): Flow<List<UserEntity>>
 
+    @Query("SELECT * from UserEntity WHERE email = :email  LIMIT 1")
+    fun getByEmail(email: String): Flow<UserEntity>
+
+    @Query(
+        "SELECT * FROM UserEntity WHERE (:search IS NULL OR name LIKE '%' || :search || '%' " +
+                "OR email LIKE '%' || :search || '%') ORDER BY id DESC"
+    )
+    fun getAll(search: String?): Flow<List<UserEntity>>
+
     @Query("DELETE FROM UserEntity")
-    fun deleteAll()
+    fun clearAll()
 }

@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -57,7 +58,7 @@ dependencies {
     // room
     implementation("androidx.room:room-runtime:2.6.0")
     implementation("androidx.room:room-ktx:2.6.0")
-//    ksp("androidx.room:room-compiler:2.6.0")
+    kapt("androidx.room:room-compiler:2.6.0")
 //    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
 
     // livedata
@@ -70,4 +71,7 @@ dependencies {
 
     // myHelper
     implementation("com.github.TistoW:MyHelper:2.0.41")
+
+    // encrypt password
+    implementation("at.favre.lib:bcrypt:0.9.0")
 }
