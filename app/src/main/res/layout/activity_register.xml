@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/paddingLarge">
+
+            <TextView
+                android:id="@+id/btn_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:text="@string/lengkapi_data_untuk_melanjutkan"
+                android:textColor="@color/gray3"
+                android:textAppearance="@style/textAppearance.Body2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginMedium"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/informasi_user"
+                    android:textAppearance="@style/textAppearance.Body2.Bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="@dimen/marginNormal"
+                    style="@style/TextInputLayout.clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/normal_height"
+                        android:background="@color/white"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="0dp"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        tools:ignore="RtlSymmetry" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <include layout="@layout/border" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/normal_height"
+                        android:background="@color/white"
+                        android:hint="@string/umur"
+                        android:inputType="number"
+                        android:padding="0dp"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        tools:ignore="RtlSymmetry" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <include layout="@layout/border" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/normal_height"
+                        android:background="@color/white"
+                        android:hint="@string/kata_sandi"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:padding="0dp"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        tools:ignore="RtlSymmetry" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_signup"
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_height"
+                    android:layout_marginTop="@dimen/marginMedium"
+                    android:layout_marginBottom="@dimen/marginExtra"
+                    android:text="@string/daftar"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

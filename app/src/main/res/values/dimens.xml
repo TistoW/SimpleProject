@@ -2,4 +2,54 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="textCaption1">@dimen/_10ssp</dimen>
+    <dimen name="textCaption2">@dimen/_9ssp</dimen>
+    <dimen name="textCaption3">@dimen/_8ssp</dimen>
+    <dimen name="textCaption4">@dimen/_7ssp</dimen>
+    <dimen name="textBody3">@dimen/_11ssp</dimen>
+    <dimen name="textBody2">@dimen/_12ssp</dimen>
+    <dimen name="textBody1">@dimen/_14ssp</dimen>
+    <dimen name="textHeading1">@dimen/_22ssp</dimen>
+    <dimen name="textHeading2">@dimen/_20ssp</dimen>
+    <dimen name="textHeading3">@dimen/_18ssp</dimen>
+    <dimen name="textHeading4">@dimen/_16ssp</dimen>
+    <dimen name="textHeading5">@dimen/_14ssp</dimen>
+    <dimen name="textHeading6">@dimen/_12ssp</dimen>
+
+    <dimen name="num_pad_width">@dimen/_80sdp</dimen>
+    <dimen name="num_pad_height">@dimen/_36sdp</dimen>
+
+    <dimen name="bottomNavIconSize">@dimen/_17sdp</dimen>
+
+    <dimen name="buttonImage">@dimen/_27sdp</dimen>
+    <dimen name="buttonImagePadding">@dimen/_6sdp</dimen>
+    <dimen name="imageNormal">@dimen/_16sdp</dimen>
+
+    <dimen name="small_height">@dimen/_30sdp</dimen>
+    <dimen name="normal_height">@dimen/_35sdp</dimen>
+    <dimen name="medium_height">@dimen/_40sdp</dimen>
+    <dimen name="large_height">@dimen/_45sdp</dimen>
+    <dimen name="extra_height">@dimen/_55sdp</dimen>
+
+    <dimen name="cornerRadiusSmallHigh">@dimen/_15sdp</dimen>
+    <dimen name="cornerRadiusSmall">@dimen/_3sdp</dimen>
+    <dimen name="cornerRadiusNormal">@dimen/_5sdp</dimen>
+    <dimen name="cornerRadiusMedium">@dimen/_7sdp</dimen>
+    <dimen name="cornerRadiusLarge">@dimen/_10sdp</dimen>
+
+    <dimen name="marginTiny">@dimen/_3sdp</dimen>
+    <dimen name="marginSmall">@dimen/_5sdp</dimen>
+    <dimen name="marginBox">@dimen/_8sdp</dimen>
+    <dimen name="marginNormal">@dimen/_10sdp</dimen>
+    <dimen name="marginMedium">@dimen/_15sdp</dimen>
+    <dimen name="marginLarge">@dimen/_20sdp</dimen>
+    <dimen name="marginExtra">@dimen/_35sdp</dimen>
+
+    <dimen name="paddingTiny">@dimen/_3sdp</dimen>
+    <dimen name="paddingSmall">@dimen/_5sdp</dimen>
+    <dimen name="paddingBox">@dimen/_8sdp</dimen>
+    <dimen name="paddingNormal">@dimen/_10sdp</dimen>
+    <dimen name="paddingMedium">@dimen/_15sdp</dimen>
+    <dimen name="paddingLarge">@dimen/_20sdp</dimen>
 </resources>

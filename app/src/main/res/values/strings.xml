@@ -4,4 +4,18 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="v1_1_1">v1.1.1</string>
+    <string name="login_untuk_melanjutkan">Login untuk melanjutkan</string>
+    <string name="email">Email</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="slogan">Permudah hidup dengan teknologi</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="lengkapi_data_untuk_melanjutkan">Lengkapi data untuk melanjutkan</string>
+    <string name="informasi_user">Informasi User</string>
+    <string name="nama">Nama</string>
+    <string name="umur">Umur</string>
 </resources>

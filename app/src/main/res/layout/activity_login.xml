@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_untuk_melanjutkan"
+                android:textAppearance="@style/textAppearance.Heading5.Bold"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTiny"
+                android:text="@string/slogan"
+                android:textAppearance="@style/textAppearance.Caption1"
+                android:textColor="@color/gray3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingNormal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_search"
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                app:startIconDrawable="@drawable/ic_email_black_24dp"
+                app:startIconMinSize="@dimen/_36sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textAppearance.Body2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                android:layout_marginTop="@dimen/marginNormal"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_lock_black_24dp"
+                app:startIconMinSize="@dimen/_36sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:paddingVertical="0dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textAppearance.Body2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                style="@style/Button.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginLarge"
+                android:gravity="center"
+                android:text="@string/masuk"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/belum_punya_akun"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="@color/gray2" />
+
+                <TextView
+                    android:id="@+id/btn_daftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/daftar"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="#B97447" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTiny"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:text="@string/v1_1_1"
+        android:textAppearance="@style/textAppearance.Caption1"
+        android:textColor="@color/gray1" />
+
+</RelativeLayout>

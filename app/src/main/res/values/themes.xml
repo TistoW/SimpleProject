@@ -18,4 +18,149 @@
     </style>
 
     <style name="Theme.SimpleApp" parent="Base.Theme.SimpleApp" />
+
+    <style name="textAppearance.TextParent" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/worksans_regular</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="textAppearance.TextParent.Bold" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/worksans_semibold</item>
+        <item name="android:fontFamily">@font/worksans_semibold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="textAppearance.Caption1" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textCaption1</item>
+    </style>
+
+    <style name="textAppearance.Caption1.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textCaption1</item>
+    </style>
+
+    <style name="textAppearance.Caption2" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textCaption2</item>
+    </style>
+
+    <style name="textAppearance.Caption2.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textCaption2</item>
+    </style>
+
+    <style name="textAppearance.Caption3" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textCaption3</item>
+    </style>
+
+    <style name="textAppearance.Caption3.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textCaption3</item>
+    </style>
+
+    <style name="textAppearance.Caption4" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textCaption4</item>
+    </style>
+
+    <style name="textAppearance.Caption4.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textCaption4</item>
+    </style>
+
+    <style name="textAppearance.Body3" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textBody3</item>
+    </style>
+
+    <style name="textAppearance.Body3.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textBody3</item>
+    </style>
+
+    <style name="textAppearance.Body2" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textBody2</item>
+    </style>
+
+    <style name="textAppearance.Body2.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textBody2</item>
+    </style>
+
+    <style name="textAppearance.Body1" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textBody1</item>
+    </style>
+
+    <style name="textAppearance.Body1.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textBody1</item>
+    </style>
+
+    <style name="textAppearance.Heading1" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading1</item>
+    </style>
+
+    <style name="textAppearance.Heading1.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading1</item>
+    </style>
+
+    <style name="textAppearance.Heading2" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading2</item>
+    </style>
+
+    <style name="textAppearance.Heading2.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading2</item>
+    </style>
+
+    <style name="textAppearance.Heading3" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading3</item>
+    </style>
+
+    <style name="textAppearance.Heading3.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading3</item>
+    </style>
+
+    <style name="textAppearance.Heading4" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading4</item>
+    </style>
+
+    <style name="textAppearance.Heading4.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading4</item>
+    </style>
+
+    <style name="textAppearance.Heading5" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading5</item>
+    </style>
+
+    <style name="textAppearance.Heading5.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading5</item>
+    </style>
+
+    <style name="textAppearance.Heading6" parent="textAppearance.TextParent">
+        <item name="android:textSize">@dimen/textHeading6</item>
+    </style>
+
+    <style name="textAppearance.Heading6.Bold" parent="textAppearance.TextParent.Bold">
+        <item name="android:textSize">@dimen/textHeading6</item>
+    </style>
+
+    <style name="TextInputLayout.Rounded" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/cornerRadiusNormal</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/cornerRadiusNormal</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/cornerRadiusNormal</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/cornerRadiusNormal</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/gray5</item>
+    </style>
+
+    <style name="Button.Normal" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/textAppearance.Body2</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:inset">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/main_button_selector</item>
+    </style>
+    <style name="TextInputLayout.clear" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintEnabled">false</item>
+    </style>
 </resources>
